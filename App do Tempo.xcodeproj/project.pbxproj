@@ -12,6 +12,8 @@
 		14939BD12B2371E4004BCAE3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14939BD02B2371E4004BCAE3 /* HomeVC.swift */; };
 		14939BD62B2371E7004BCAE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14939BD52B2371E7004BCAE3 /* Assets.xcassets */; };
 		14939BD92B2371E7004BCAE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14939BD72B2371E7004BCAE3 /* LaunchScreen.storyboard */; };
+		14939BE32B23F149004BCAE3 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14939BE22B23F149004BCAE3 /* HomeScreen.swift */; };
+		14939BE72B23F39C004BCAE3 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14939BE62B23F39C004BCAE3 /* UIView + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		14939BD52B2371E7004BCAE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14939BD82B2371E7004BCAE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14939BDA2B2371E7004BCAE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14939BE22B23F149004BCAE3 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		14939BE62B23F39C004BCAE3 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,48 @@
 		14939BCB2B2371E4004BCAE3 /* App do Tempo */ = {
 			isa = PBXGroup;
 			children = (
-				14939BCC2B2371E4004BCAE3 /* AppDelegate.swift */,
-				14939BCE2B2371E4004BCAE3 /* SceneDelegate.swift */,
-				14939BD02B2371E4004BCAE3 /* HomeVC.swift */,
-				14939BD52B2371E7004BCAE3 /* Assets.xcassets */,
-				14939BD72B2371E7004BCAE3 /* LaunchScreen.storyboard */,
+				14939BE52B23F385004BCAE3 /* Extensions */,
+				14939BE02B23F12B004BCAE3 /* Home */,
+				14939BE42B23F156004BCAE3 /* Resources */,
 				14939BDA2B2371E7004BCAE3 /* Info.plist */,
 			);
 			path = "App do Tempo";
+			sourceTree = "<group>";
+		};
+		14939BE02B23F12B004BCAE3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				14939BD02B2371E4004BCAE3 /* HomeVC.swift */,
+				14939BE12B23F132004BCAE3 /* Screen */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		14939BE12B23F132004BCAE3 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				14939BE22B23F149004BCAE3 /* HomeScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		14939BE42B23F156004BCAE3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				14939BCC2B2371E4004BCAE3 /* AppDelegate.swift */,
+				14939BCE2B2371E4004BCAE3 /* SceneDelegate.swift */,
+				14939BD52B2371E7004BCAE3 /* Assets.xcassets */,
+				14939BD72B2371E7004BCAE3 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		14939BE52B23F385004BCAE3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				14939BE62B23F39C004BCAE3 /* UIView + Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,8 +172,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14939BE32B23F149004BCAE3 /* HomeScreen.swift in Sources */,
 				14939BD12B2371E4004BCAE3 /* HomeVC.swift in Sources */,
 				14939BCD2B2371E4004BCAE3 /* AppDelegate.swift in Sources */,
+				14939BE72B23F39C004BCAE3 /* UIView + Extension.swift in Sources */,
 				14939BCF2B2371E4004BCAE3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
