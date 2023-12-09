@@ -14,6 +14,7 @@
 		14939BD92B2371E7004BCAE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14939BD72B2371E7004BCAE3 /* LaunchScreen.storyboard */; };
 		14939BE32B23F149004BCAE3 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14939BE22B23F149004BCAE3 /* HomeScreen.swift */; };
 		14939BE72B23F39C004BCAE3 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14939BE62B23F39C004BCAE3 /* UIView + Extension.swift */; };
+		14939BE92B23F93C004BCAE3 /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14939BE82B23F93C004BCAE3 /* UIColor + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		14939BDA2B2371E7004BCAE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14939BE22B23F149004BCAE3 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		14939BE62B23F39C004BCAE3 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
+		14939BE82B23F93C004BCAE3 /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				14939BE62B23F39C004BCAE3 /* UIView + Extension.swift */,
+				14939BE82B23F93C004BCAE3 /* UIColor + Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				14939BE32B23F149004BCAE3 /* HomeScreen.swift in Sources */,
 				14939BD12B2371E4004BCAE3 /* HomeVC.swift in Sources */,
 				14939BCD2B2371E4004BCAE3 /* AppDelegate.swift in Sources */,
+				14939BE92B23F93C004BCAE3 /* UIColor + Extension.swift in Sources */,
 				14939BE72B23F39C004BCAE3 /* UIView + Extension.swift in Sources */,
 				14939BCF2B2371E4004BCAE3 /* SceneDelegate.swift in Sources */,
 			);
