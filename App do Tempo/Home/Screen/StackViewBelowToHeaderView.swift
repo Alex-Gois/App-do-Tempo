@@ -64,6 +64,7 @@ class StackViewBelowToHeaderView: UIView {
         stack.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 14, leading: 22, bottom: 14, trailing: 22)
         stack.clipsToBounds = true
         stack.layer.cornerRadius = 10
+        stack.setCardShadow()
         return stack
     }()
     
