@@ -46,6 +46,12 @@ class HomeScreen: UIView {
         image.image = UIImage(named: "sunIcon")
         return image
     }()
+    
+    lazy var stackViewBelowToHeaderView: StackViewBelowToHeaderView = {
+        let stack = StackViewBelowToHeaderView()
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        return stack
+    }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -63,6 +69,7 @@ class HomeScreen: UIView {
         headerView.addSubview(cityLabel)
         headerView.addSubview(temperatureLabel)
         headerView.addSubview(sunIconImageView)
+        addSubview(stackViewBelowToHeaderView)
     }
     
     private func setConstraints() {
@@ -79,12 +86,15 @@ class HomeScreen: UIView {
             
             temperatureLabel.topAnchor.constraint(equalTo: cityLabel.bottomAnchor,constant: 21),
             temperatureLabel.leadingAnchor.constraint(equalTo: headerView.leadingAnchor,constant: 25),
-            temperatureLabel.trailingAnchor.constraint(equalTo: headerView.trailingAnchor),
+            temperatureLabel.widthAnchor.constraint(lessThanOrEqualToConstant: 180),
             
             sunIconImageView.centerYAnchor.constraint(equalTo: temperatureLabel.centerYAnchor),
-            sunIconImageView.leadingAnchor.constraint(equalTo: temperatureLabel.trailingAnchor,constant: -15),
+            sunIconImageView.leadingAnchor.constraint(equalTo: temperatureLabel.trailingAnchor,constant: 15),
             sunIconImageView.widthAnchor.constraint(equalToConstant: 86),
             sunIconImageView.heightAnchor.constraint(equalToConstant: 86),
+            
+            stackViewBelowToHeaderView.StackViewArrangement.topAnchor.constraint(equalTo: headerView.bottomAnchor,constant: 25),
+            stackViewBelowToHeaderView.StackViewArrangement.centerXAnchor.constraint(equalTo: self.centerXAnchor),
         ])
     }
 }
