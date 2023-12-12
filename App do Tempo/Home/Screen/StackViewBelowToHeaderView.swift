@@ -2,7 +2,7 @@ import UIKit
 
 class StackViewBelowToHeaderView: UIView {
     
-    lazy var humidityLabel: UILabel = {
+    private lazy var humidityLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
@@ -11,7 +11,7 @@ class StackViewBelowToHeaderView: UIView {
         return label
     }()
     
-    lazy var humidityValueLabel: UILabel = {
+    private lazy var humidityValueLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
@@ -20,7 +20,7 @@ class StackViewBelowToHeaderView: UIView {
         return label
     }()
     
-    lazy var humidityStackView: UIStackView = {
+    private lazy var humidityStackView: UIStackView = {
         let stack = UIStackView(arrangedSubviews: [humidityLabel, humidityValueLabel])
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.axis = .horizontal
@@ -28,7 +28,7 @@ class StackViewBelowToHeaderView: UIView {
         return stack
     }()
     
-    lazy var windLabel: UILabel = {
+    private lazy var windLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
@@ -37,7 +37,7 @@ class StackViewBelowToHeaderView: UIView {
         return label
     }()
     
-    lazy var windValueLabel: UILabel = {
+    private lazy var windValueLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
@@ -46,7 +46,7 @@ class StackViewBelowToHeaderView: UIView {
         return label
     }()
     
-    lazy var windStackView: UIStackView = {
+    private lazy var windStackView: UIStackView = {
         let stack = UIStackView(arrangedSubviews: [windLabel, windValueLabel])
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.axis = .horizontal
@@ -54,7 +54,7 @@ class StackViewBelowToHeaderView: UIView {
         return stack
     }()
     
-    lazy var StackViewArrangement: UIStackView = {
+    public lazy var StackViewArrangement: UIStackView = {
         let stack = UIStackView(arrangedSubviews: [humidityStackView, windStackView])
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.axis = .vertical

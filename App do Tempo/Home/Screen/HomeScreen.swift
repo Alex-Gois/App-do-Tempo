@@ -2,7 +2,7 @@ import UIKit
 
 class HomeScreen: UIView {
     
-    lazy var backGroundImageView: UIImageView = {
+    private lazy var backGroundImageView: UIImageView = {
         let image = UIImageView()
         image.image = UIImage(named: "background")
         image.translatesAutoresizingMaskIntoConstraints = false
@@ -10,7 +10,7 @@ class HomeScreen: UIView {
         return image
     }()
     
-    lazy var headerView: UIView = {
+    private lazy var headerView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .white
@@ -20,7 +20,7 @@ class HomeScreen: UIView {
         return view
     }()
     
-    lazy var cityLabel: UILabel = {
+    private lazy var cityLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 20)
@@ -30,7 +30,7 @@ class HomeScreen: UIView {
         return label
     }()
     
-    lazy var temperatureLabel: UILabel = {
+    private lazy var temperatureLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 70,weight: .semibold)
@@ -39,7 +39,7 @@ class HomeScreen: UIView {
         return label
     }()
     
-    lazy var sunIconImageView: UIImageView = {
+    private lazy var sunIconImageView: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
         image.contentMode = .scaleAspectFit
@@ -47,11 +47,38 @@ class HomeScreen: UIView {
         return image
     }()
     
-    lazy var stackViewBelowToHeaderView: StackViewBelowToHeaderView = {
+    private lazy var stackViewBelowToHeaderView: StackViewBelowToHeaderView = {
         let stack = StackViewBelowToHeaderView()
         stack.translatesAutoresizingMaskIntoConstraints = false
         return stack
     }()
+    
+    private lazy var hourlyForecastLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont.systemFont(ofSize: 12,weight: .semibold)
+        label.textColor = .white
+        label.text = "PREVISÃO POR HORA"
+        label.textAlignment = .center
+        return label
+    }()
+    
+    private lazy var collectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        let collection = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collection.translatesAutoresizingMaskIntoConstraints = false
+        collection.showsHorizontalScrollIndicator = false
+        collection.backgroundColor = .green
+        //TODO: Register
+//        collection.register(<#T##cellClass: AnyClass?##AnyClass?#>, forCellWithReuseIdentifier: <#T##String#>)
+        return collection
+    }()
+    
+    public func configCollectionViewProtocols(delegate: UICollectionViewDelegate, dataSource: UICollectionViewDataSource) {
+        collectionView.delegate = delegate
+        collectionView.dataSource = dataSource
+    }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -70,6 +97,8 @@ class HomeScreen: UIView {
         headerView.addSubview(temperatureLabel)
         headerView.addSubview(sunIconImageView)
         addSubview(stackViewBelowToHeaderView)
+        addSubview(hourlyForecastLabel)
+        addSubview(collectionView)
     }
     
     private func setConstraints() {
@@ -95,6 +124,13 @@ class HomeScreen: UIView {
             
             stackViewBelowToHeaderView.StackViewArrangement.topAnchor.constraint(equalTo: headerView.bottomAnchor,constant: 25),
             stackViewBelowToHeaderView.StackViewArrangement.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            
+            hourlyForecastLabel.topAnchor.constraint(equalTo: stackViewBelowToHeaderView.StackViewArrangement.bottomAnchor,constant: 30),
+            hourlyForecastLabel.centerXAnchor.constraint(equalTo: headerView.centerXAnchor),
+            
+            collectionView.topAnchor.constraint(equalTo: hourlyForecastLabel.bottomAnchor,constant: 22),
+            collectionView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            collectionView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
         ])
     }
 }
