@@ -69,9 +69,8 @@ class HomeScreen: UIView {
         let collection = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collection.translatesAutoresizingMaskIntoConstraints = false
         collection.showsHorizontalScrollIndicator = false
-        collection.backgroundColor = .green
-        //TODO: Register
-//        collection.register(<#T##cellClass: AnyClass?##AnyClass?#>, forCellWithReuseIdentifier: <#T##String#>)
+        collection.backgroundColor = .clear
+        collection.register(HourlyForecastCollectionViewCell.self, forCellWithReuseIdentifier: HourlyForecastCollectionViewCell.identifier)
         return collection
     }()
     
@@ -131,6 +130,7 @@ class HomeScreen: UIView {
             collectionView.topAnchor.constraint(equalTo: hourlyForecastLabel.bottomAnchor,constant: 22),
             collectionView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             collectionView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            collectionView.heightAnchor.constraint(equalToConstant: 85),
         ])
     }
 }

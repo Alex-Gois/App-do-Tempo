@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		147BAABD2B293BFC000B352F /* HourlyForecastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147BAABC2B293BFC000B352F /* HourlyForecastCollectionViewCell.swift */; };
+		147BAABF2B293C0F000B352F /* HourlyForecastCollectionViewCellSCreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147BAABE2B293C0F000B352F /* HourlyForecastCollectionViewCellSCreen.swift */; };
 		14939BCD2B2371E4004BCAE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14939BCC2B2371E4004BCAE3 /* AppDelegate.swift */; };
 		14939BCF2B2371E4004BCAE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14939BCE2B2371E4004BCAE3 /* SceneDelegate.swift */; };
 		14939BD12B2371E4004BCAE3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14939BD02B2371E4004BCAE3 /* HomeVC.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		147BAABC2B293BFC000B352F /* HourlyForecastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastCollectionViewCell.swift; sourceTree = "<group>"; };
+		147BAABE2B293C0F000B352F /* HourlyForecastCollectionViewCellSCreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastCollectionViewCellSCreen.swift; sourceTree = "<group>"; };
 		14939BC92B2371E4004BCAE3 /* App do Tempo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App do Tempo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14939BCC2B2371E4004BCAE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14939BCE2B2371E4004BCAE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		147BAABA2B293BB8000B352F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				147BAABB2B293BBF000B352F /* HourlyForecastCollectionViewCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		147BAABB2B293BBF000B352F /* HourlyForecastCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				147BAABC2B293BFC000B352F /* HourlyForecastCollectionViewCell.swift */,
+				147BAAC02B293C27000B352F /* Screen */,
+			);
+			path = HourlyForecastCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		147BAAC02B293C27000B352F /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				147BAABE2B293C0F000B352F /* HourlyForecastCollectionViewCellSCreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
 		14939BC02B2371E4004BCAE3 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				14939BD02B2371E4004BCAE3 /* HomeVC.swift */,
+				147BAABA2B293BB8000B352F /* Cell */,
 				14939BE12B23F132004BCAE3 /* Screen */,
 			);
 			path = Home;
@@ -180,6 +210,8 @@
 			files = (
 				14939BE32B23F149004BCAE3 /* HomeScreen.swift in Sources */,
 				14939BD12B2371E4004BCAE3 /* HomeVC.swift in Sources */,
+				147BAABF2B293C0F000B352F /* HourlyForecastCollectionViewCellSCreen.swift in Sources */,
+				147BAABD2B293BFC000B352F /* HourlyForecastCollectionViewCell.swift in Sources */,
 				14939BCD2B2371E4004BCAE3 /* AppDelegate.swift in Sources */,
 				14939BE92B23F93C004BCAE3 /* UIColor + Extension.swift in Sources */,
 				14939BE72B23F39C004BCAE3 /* UIView + Extension.swift in Sources */,
