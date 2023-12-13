@@ -70,6 +70,7 @@ class HomeScreen: UIView {
         collection.translatesAutoresizingMaskIntoConstraints = false
         collection.showsHorizontalScrollIndicator = false
         collection.backgroundColor = .clear
+        collection.contentInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
         collection.register(HourlyForecastCollectionViewCell.self, forCellWithReuseIdentifier: HourlyForecastCollectionViewCell.identifier)
         return collection
     }()

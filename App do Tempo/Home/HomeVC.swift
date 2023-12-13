@@ -15,7 +15,7 @@ class HomeVC: UIViewController {
     }
 }
 
-extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource {
+extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
@@ -24,4 +24,10 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HourlyForecastCollectionViewCell.identifier, for: indexPath) as? HourlyForecastCollectionViewCell
         return cell ?? UICollectionViewCell()
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 67, height: collectionView.frame.height)
+    }
+    
+    
 }
