@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		147BAABD2B293BFC000B352F /* HourlyForecastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147BAABC2B293BFC000B352F /* HourlyForecastCollectionViewCell.swift */; };
 		147BAABF2B293C0F000B352F /* HourlyForecastCollectionViewCellSCreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147BAABE2B293C0F000B352F /* HourlyForecastCollectionViewCellSCreen.swift */; };
+		147CC8B12B2B3FE10088B647 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147CC8B02B2B3FE10088B647 /* Service.swift */; };
 		1483FD522B2B29BD00555889 /* DailyForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1483FD512B2B29BD00555889 /* DailyForecastTableViewCell.swift */; };
 		1483FD552B2B29D800555889 /* DailyForecastTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1483FD542B2B29D800555889 /* DailyForecastTableViewCellScreen.swift */; };
 		14939BCD2B2371E4004BCAE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14939BCC2B2371E4004BCAE3 /* AppDelegate.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		147BAABC2B293BFC000B352F /* HourlyForecastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastCollectionViewCell.swift; sourceTree = "<group>"; };
 		147BAABE2B293C0F000B352F /* HourlyForecastCollectionViewCellSCreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastCollectionViewCellSCreen.swift; sourceTree = "<group>"; };
+		147CC8B02B2B3FE10088B647 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		1483FD512B2B29BD00555889 /* DailyForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecastTableViewCell.swift; sourceTree = "<group>"; };
 		1483FD542B2B29D800555889 /* DailyForecastTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecastTableViewCellScreen.swift; sourceTree = "<group>"; };
 		14939BC92B2371E4004BCAE3 /* App do Tempo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App do Tempo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +115,7 @@
 		14939BCB2B2371E4004BCAE3 /* App do Tempo */ = {
 			isa = PBXGroup;
 			children = (
+				147CC8B02B2B3FE10088B647 /* Service.swift */,
 				14939BE52B23F385004BCAE3 /* Extensions */,
 				14939BE02B23F12B004BCAE3 /* Home */,
 				14939BE42B23F156004BCAE3 /* Resources */,
@@ -235,6 +238,7 @@
 				147BAABF2B293C0F000B352F /* HourlyForecastCollectionViewCellSCreen.swift in Sources */,
 				147BAABD2B293BFC000B352F /* HourlyForecastCollectionViewCell.swift in Sources */,
 				14939BCD2B2371E4004BCAE3 /* AppDelegate.swift in Sources */,
+				147CC8B12B2B3FE10088B647 /* Service.swift in Sources */,
 				14939BE92B23F93C004BCAE3 /* UIColor + Extension.swift in Sources */,
 				1483FD552B2B29D800555889 /* DailyForecastTableViewCellScreen.swift in Sources */,
 				1483FD522B2B29BD00555889 /* DailyForecastTableViewCell.swift in Sources */,

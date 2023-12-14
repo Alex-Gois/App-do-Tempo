@@ -4,9 +4,15 @@ class HomeVC: UIViewController {
     
     private var homeScreen: HomeScreen?
     
+    private let service = Service()
+    
     override func loadView() {
         homeScreen = HomeScreen()
         view = homeScreen
+        
+        service.fecthData(city: City(lat: "-23.6944", lon: "-46.5654", name: "São Bernardo")) { message in
+            print(message)
+        }
     }
 
     override func viewDidLoad() {
