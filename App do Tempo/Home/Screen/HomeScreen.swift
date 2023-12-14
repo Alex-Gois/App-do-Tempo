@@ -79,6 +79,28 @@ class HomeScreen: UIView {
         collectionView.delegate = delegate
         collectionView.dataSource = dataSource
     }
+    
+    private lazy var nextDaysLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont.systemFont(ofSize: 12,weight: .semibold)
+        label.textColor = .white
+        label.text = "PROXIMOS DIAS"
+        label.textAlignment = .center
+        return label
+    }()
+    
+    private lazy var tableView: UITableView = {
+        let table = UITableView()
+        table.translatesAutoresizingMaskIntoConstraints = false
+        table.backgroundColor = .red
+        return table
+    }()
+    
+    public func configTableViewProtocols(delegate: UITableViewDelegate, dataSource: UITableViewDataSource) {
+        tableView.delegate = delegate
+        tableView.dataSource = dataSource
+    }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -99,6 +121,8 @@ class HomeScreen: UIView {
         addSubview(stackViewBelowToHeaderView)
         addSubview(hourlyForecastLabel)
         addSubview(collectionView)
+        addSubview(nextDaysLabel)
+        addSubview(tableView)
     }
     
     private func setConstraints() {
@@ -132,6 +156,14 @@ class HomeScreen: UIView {
             collectionView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             collectionView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             collectionView.heightAnchor.constraint(equalToConstant: 85),
+            
+            nextDaysLabel.topAnchor.constraint(equalTo: collectionView.bottomAnchor,constant: 30),
+            nextDaysLabel.centerXAnchor.constraint(equalTo: headerView.centerXAnchor),
+            
+            tableView.topAnchor.constraint(equalTo: nextDaysLabel.bottomAnchor,constant: 30),
+            tableView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            tableView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor)
         ])
     }
 }
