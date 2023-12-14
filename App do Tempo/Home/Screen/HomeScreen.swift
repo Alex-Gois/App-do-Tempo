@@ -93,7 +93,8 @@ class HomeScreen: UIView {
     private lazy var tableView: UITableView = {
         let table = UITableView()
         table.translatesAutoresizingMaskIntoConstraints = false
-        table.backgroundColor = .red
+        table.backgroundColor = .clear
+        table.register(DailyForecastTableViewCell.self, forCellReuseIdentifier: DailyForecastTableViewCell.identifier)
         return table
     }()
     

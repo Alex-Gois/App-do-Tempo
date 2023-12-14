@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		147BAABD2B293BFC000B352F /* HourlyForecastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147BAABC2B293BFC000B352F /* HourlyForecastCollectionViewCell.swift */; };
 		147BAABF2B293C0F000B352F /* HourlyForecastCollectionViewCellSCreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147BAABE2B293C0F000B352F /* HourlyForecastCollectionViewCellSCreen.swift */; };
+		1483FD522B2B29BD00555889 /* DailyForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1483FD512B2B29BD00555889 /* DailyForecastTableViewCell.swift */; };
+		1483FD552B2B29D800555889 /* DailyForecastTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1483FD542B2B29D800555889 /* DailyForecastTableViewCellScreen.swift */; };
 		14939BCD2B2371E4004BCAE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14939BCC2B2371E4004BCAE3 /* AppDelegate.swift */; };
 		14939BCF2B2371E4004BCAE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14939BCE2B2371E4004BCAE3 /* SceneDelegate.swift */; };
 		14939BD12B2371E4004BCAE3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14939BD02B2371E4004BCAE3 /* HomeVC.swift */; };
@@ -23,6 +25,8 @@
 /* Begin PBXFileReference section */
 		147BAABC2B293BFC000B352F /* HourlyForecastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastCollectionViewCell.swift; sourceTree = "<group>"; };
 		147BAABE2B293C0F000B352F /* HourlyForecastCollectionViewCellSCreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastCollectionViewCellSCreen.swift; sourceTree = "<group>"; };
+		1483FD512B2B29BD00555889 /* DailyForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecastTableViewCell.swift; sourceTree = "<group>"; };
+		1483FD542B2B29D800555889 /* DailyForecastTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecastTableViewCellScreen.swift; sourceTree = "<group>"; };
 		14939BC92B2371E4004BCAE3 /* App do Tempo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App do Tempo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14939BCC2B2371E4004BCAE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14939BCE2B2371E4004BCAE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +54,7 @@
 		147BAABA2B293BB8000B352F /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				1483FD502B2B298400555889 /* DailyForecastTableViewCell */,
 				147BAABB2B293BBF000B352F /* HourlyForecastCollectionViewCell */,
 			);
 			path = Cell;
@@ -70,6 +75,23 @@
 				147BAABE2B293C0F000B352F /* HourlyForecastCollectionViewCellSCreen.swift */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		1483FD502B2B298400555889 /* DailyForecastTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1483FD512B2B29BD00555889 /* DailyForecastTableViewCell.swift */,
+				1483FD532B2B29C300555889 /* SCreen */,
+			);
+			path = DailyForecastTableViewCell;
+			sourceTree = "<group>";
+		};
+		1483FD532B2B29C300555889 /* SCreen */ = {
+			isa = PBXGroup;
+			children = (
+				1483FD542B2B29D800555889 /* DailyForecastTableViewCellScreen.swift */,
+			);
+			path = SCreen;
 			sourceTree = "<group>";
 		};
 		14939BC02B2371E4004BCAE3 = {
@@ -214,6 +236,8 @@
 				147BAABD2B293BFC000B352F /* HourlyForecastCollectionViewCell.swift in Sources */,
 				14939BCD2B2371E4004BCAE3 /* AppDelegate.swift in Sources */,
 				14939BE92B23F93C004BCAE3 /* UIColor + Extension.swift in Sources */,
+				1483FD552B2B29D800555889 /* DailyForecastTableViewCellScreen.swift in Sources */,
+				1483FD522B2B29BD00555889 /* DailyForecastTableViewCell.swift in Sources */,
 				14939BE72B23F39C004BCAE3 /* UIView + Extension.swift in Sources */,
 				14939BCF2B2371E4004BCAE3 /* SceneDelegate.swift in Sources */,
 				14939BEB2B24EAA1004BCAE3 /* StackViewBelowToHeaderView.swift in Sources */,
